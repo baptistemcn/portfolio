@@ -13,7 +13,7 @@ export const Icons = (props: IconProps) => {
       rel="noreferrer"
       className="p-4 m-4 rounded-xl bg-gray-200"
     >
-      <Image {...{ src, alt }} className="max-w-16 max-h-16" />
+      <Image {...{ src, alt }} priority={false} className="max-w-16 max-h-16" />
     </Link>
   );
 };

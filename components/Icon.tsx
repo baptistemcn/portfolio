@@ -1,20 +1,19 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
-import "./icon.scss";
+import { IconProps } from "@/types";
 
-interface IconsProps {
-  src: StaticImageData;
-  href: string;
-  alt: string;
-}
-
-export const Icons = (props: IconsProps) => {
+export const Icons = (props: IconProps) => {
   const { src, href, alt } = props;
 
   return (
-    <Link {...{ href }} target="_blank" rel="noreferrer" className="icons">
-      <Image {...{ src, alt }} className="icons-img" />
+    <Link
+      {...{ href }}
+      target="_blank"
+      rel="noreferrer"
+      className="p-4 m-4 rounded-xl bg-gray-200"
+    >
+      <Image {...{ src, alt }} className="max-w-16 max-h-16" />
     </Link>
   );
 };

@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div>
           <div className="flex flex-col justify-center items-center mx-8">
-            <h1 className="my-16 text-center text-3xl">Front-End Developer</h1>
+            <h1 className="my-12 text-center text-3xl">Front-End Developer</h1>
             <p className="text-center text-2xl">
               Hey, I am Baptiste Marcon, Front-End developer based in France 📍
             </p>
